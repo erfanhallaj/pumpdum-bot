@@ -1,0 +1,13 @@
+# این فایل را به .env تغییر نام دهید
+# یا محتوای آن را در فایل .env کپی کنید
+
+# Telegram Configuration
+TELEGRAM_BOT_TOKEN=7804159113:AAGeTdxOEXuhxibCcZqjtfFiuQ_jjmIQIVU
+TELEGRAM_CHAT_ID=pythontrade_ai
+
+# Exchange Configuration (Optional - for authenticated API access)
+EXCHANGE_NAME=binance
+EXCHANGE_API_KEY=
+EXCHANGE_API_SECRET=
+
+
