@@ -1,13 +1,14 @@
-# این فایل را به .env تغییر نام دهید
-# یا محتوای آن را در فایل .env کپی کنید
+# این فایل فقط یک نمونه (template) است.
+# ✅ مرحله ۱: این فایل را به `.env` تغییر نام بدهید یا محتوای آن را در `.env` کپی کنید.
+# ✅ مرحله ۲: مقادیر زیر را با اطلاعات واقعی خودتان جایگزین کنید.
+# ❌ هیچ‌وقت فایل `.env` واقعی را روی GitHub آپلود نکنید.
 
 # Telegram Configuration
-TELEGRAM_BOT_TOKEN=7804159113:AAGeTdxOEXuhxibCcZqjtfFiuQ_jjmIQIVU
-TELEGRAM_CHAT_ID=pythontrade_ai
+TELEGRAM_BOT_TOKEN=your_real_telegram_bot_token_here
+TELEGRAM_CHAT_ID=your_channel_or_chat_id_here
 
 # Exchange Configuration (Optional - for authenticated API access)
-EXCHANGE_NAME=binance
-EXCHANGE_API_KEY=
-EXCHANGE_API_SECRET=
-
+EXCHANGE_NAME=kucoin
+EXCHANGE_API_KEY=your_exchange_api_key_here
+EXCHANGE_API_SECRET=your_exchange_api_secret_here
 

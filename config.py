@@ -1,5 +1,10 @@
 """
 Configuration file for the AI Pump Detection Bot
+
+⚠️ SECURITY NOTE:
+- Never hard-code any real API keys, tokens, or passwords in this file.
+- Always put secrets in a local `.env` file (which is already gitignored)
+  or in environment variables on your server/host.
 """
 import os
 from dotenv import load_dotenv
@@ -7,8 +12,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Telegram Configuration
-TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '7804159113:AAGeTdxOEXuhxibCcZqjtfFiuQ_jjmIQIVU')
-TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID', '@pythontrade_ai')
+# Set these in your `.env` file or environment variables, for example:
+# TELEGRAM_BOT_TOKEN=your_bot_token_here
+# TELEGRAM_CHAT_ID=your_channel_or_chat_id
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '')
+TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID', '')
 
 # Exchange Configuration - ONLY LBank, CoinEx, and KuCoin
 EXCHANGE_NAME = os.getenv('EXCHANGE_NAME', 'kucoin')  # Default to KuCoin
@@ -16,12 +24,13 @@ EXCHANGE_API_KEY = os.getenv('EXCHANGE_API_KEY', '')
 EXCHANGE_API_SECRET = os.getenv('EXCHANGE_API_SECRET', '')
 
 # Market Data APIs (for more accurate data)
-COINGECKO_API_KEY = os.getenv('COINGECKO_API_KEY', 'CG-EYFYZQqnJwvLAuuxkEkX8R9w')
-COINMARKETCAP_API_KEY = os.getenv('COINMARKETCAP_API_KEY', '3b3a33e157dd48ffb61c65e97d4416c2')
+# IMPORTANT: Set these only via environment variables / `.env`
+COINGECKO_API_KEY = os.getenv('COINGECKO_API_KEY', '')
+COINMARKETCAP_API_KEY = os.getenv('COINMARKETCAP_API_KEY', '')
 USE_MARKET_DATA_APIS = True  # Enable CoinGecko/CoinMarketCap for better data
 
 # News & Fundamental Analysis
-NEWSAPI_KEY = os.getenv('NEWSAPI_KEY', '57491ef0988749878037caddc77e12c2')
+NEWSAPI_KEY = os.getenv('NEWSAPI_KEY', '')
 ENABLE_FUNDAMENTAL_ANALYSIS = True  # Analyze news when signals are generated
 
 # Self-Learning Strategy Optimization
